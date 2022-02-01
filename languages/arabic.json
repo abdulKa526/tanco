@@ -1,0 +1,7 @@
+{
+  "CFBundleDisplayName": "تانكو",
+  "NSLocationWhenInUseUsageDescription": "يستخدم التطبيق الموقع لامكانية تحديد المواقع بواسطة الخريطة",
+  "NSCameraUsageDescription": "يستخدم التطبيق الكاميرا لالتقاط الصور ومشاركتها مع المستخدمين",
+  "NSPhotoLibraryAddUsageDescription": "يستخدم التطبيق مكتبة الصور لمشاركتها مع المستخدمين او حفظها",
+  "NSPhotoLibraryUsageDescription": "يستخدم التطبيق مكتبة الصور لمشاركتها مع المستخدمين"
+}

@@ -1,0 +1,7 @@
+{
+  "CFBundleDisplayName": "Tanko",
+  "NSLocationWhenInUseUsageDescription": "The application uses the location for the possibility of determining locations by the map",
+  "NSCameraUsageDescription": "The app uses the camera to share photos with users",
+  "NSPhotoLibraryAddUsageDescription": "The application uses the photo library to share with users or save them",
+  "NSPhotoLibraryUsageDescription": "The app uses a photo library to share with users"
+}

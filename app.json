@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "tanko",
+    "description": "tanko app",
+    "slug": "tanko",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "tankoapp",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "enabled": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "locales": {
+      "ar": "./languages/arabic.json",
+      "en": "./languages/english.json"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon-512.png",
+          "color": "#ffffff",
+          "mode": "production"
+        }
+      ]
+    ],
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  }
+}
