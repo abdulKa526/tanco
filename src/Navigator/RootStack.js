@@ -2,6 +2,8 @@ import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 import Connector from '../Redux/Connector'
 import ViewProductScreen from '../Screens/Customer/ViewProductScreen'
+import CartDetailsScreen from '../Screens/Customer/CartDetails'
+import ProductsScreen from '../Screens/Customer/ProductsScreen'
 import TabNavigator from './TabNavigator'
 import ToggleLocaleScreen from '../Screens/Util/ToggleLocaleScreen'
 import SignOutScreen from '../Screens/Auth/SignOutScreen'
@@ -67,11 +69,15 @@ function RootStack ({ token, ...props }) {
 
         <Stack.Screen
           name='ProductsScreen'
-          component={ViewProductScreen}
+          component={ProductsScreen}
         />
         <Stack.Screen
           name='ViewProductScreen'
           component={ViewProductScreen}
+        />
+        <Stack.Screen
+          name='cartDetails'
+          component={CartDetailsScreen}
         />
       </Stack.Group>
 

@@ -1,22 +1,22 @@
-
+/* eslint-disable react/jsx-indent-props */
+/* eslint-disable react/jsx-indent */
 import React, { useEffect } from 'react'
-import { View, Text, ImageBackground, ScrollView, BackHandler } from 'react-native'
+import { View, Text, ImageBackground, ScrollView, BackHandler, Image } from 'react-native'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import { useNavigation } from '@react-navigation/native'
 import CustomButton from '../../Components/AppButton'
 import Connector from '../../Redux/Connector'
-import { Page, AppText, Col } from '../../Components'
-import styles from './styles.js'
+import { Page, AppText, Col, Counter } from '../../Components'
+import styles from './stylesDetails'
 
 function handleBackButtonClick () {
   const navigation = useNavigation()
   navigation.goBack()
   return true
 }
-function ProductsScreen (props) {
+function CartDetails (props) {
   const { app } = props
   const days = 5
-  const rating = 4.56
   const post = props.post
 
   useEffect(() => {
@@ -32,19 +32,24 @@ function ProductsScreen (props) {
       showsVerticalScrollIndicator={false}
     >
       <View style={styles.container}>
+        <View style={styles.imageButtons}>
+          <AntDesign onPress={handleBackButtonClick} style={styles.back} name='back' size={19} color='black' />
+          <AntDesign style={styles.like} name='hearto' size={19} color='black' />
+        </View>
 
         {/* Image */}
-        <ImageBackground
-          style={styles.image}
-          source={require('../../../assets/p1.jpg')}
-        >
-
-          <View style={styles.imageButtons}>
-            <AntDesign onPress={handleBackButtonClick} style={styles.back} name='back' size={19} color='black' />
-            <AntDesign style={styles.like} name='hearto' size={19} color='black' />
+        <View styles={{ flexDirection: 'row' }}>
+          <View>
+                <Image
+                style={styles.image}
+                source={require('../../../assets/p1.jpg')}
+                />
           </View>
-
-        </ImageBackground>
+          <View>
+                <Text>Diesel (500 liters)</Text>
+                <Counter />
+          </View>
+        </View>
 
         <View style={styles.info}>
           {/* Title and Location */}
@@ -86,4 +91,4 @@ function ProductsScreen (props) {
     </Page>
   )
 };
-export default Connector(ProductsScreen)
+export default Connector(CartDetails)

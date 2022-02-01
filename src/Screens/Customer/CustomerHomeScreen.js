@@ -92,7 +92,7 @@ function CustomerHomeScreen (props) {
           </View>
 
         </View>
-        <Pressable onPress={() => RouteNavigator.products.view(navigation)}>
+        <Pressable>
           <ViewProductScreen />
         </Pressable>
       </Col>

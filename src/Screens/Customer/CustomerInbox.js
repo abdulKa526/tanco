@@ -5,15 +5,15 @@ import Connector from '../../Redux/Connector'
 import Header from '../../Components/Grid/Header'
 import InboxContent from '../../Components/InboxContent'
 import ViewProductScreen from './ProductsScreen'
+import CartDetails from './CartDetails'
 
 function MessagingScreen (props) {
   return (
 
     <Page>
       <Header />
-      <View style={styles.Container}>
-        <Text style={styles.Title}>Inbox</Text>
-        <ViewProductScreen />
+      <View>
+        <CartDetails />
       </View>
     </Page>
   )

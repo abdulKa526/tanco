@@ -5,12 +5,14 @@ import AppText from './AppText'
 import AppInput from './AppInput'
 import AppButton from './AppButton'
 import LoadingView from './Loading/LoadingView'
+import Counter from './Counter'
 
 export {
   LoadingView,
   Page,
   Col,
   Row,
+  Counter,
   AppText,
   AppInput,
   AppButton

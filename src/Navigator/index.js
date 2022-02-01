@@ -53,6 +53,7 @@ export const RouteNavigator = {
     resetPassword: (navigation, { mobile, verification_code }) => navigation.replace('ResetPassword', { mobile, verification_code })
   },
   products: {
+    cart: (navigation, params) => navigation.navigate('cartDetailsScreen', params),
     list: (navigation, params) => navigation.navigate('ProductsList', params),
     view: (navigation, id) => navigation.navigate('ViewProduct', {
       params: { id }
